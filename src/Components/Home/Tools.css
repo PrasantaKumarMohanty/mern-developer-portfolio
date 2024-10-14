@@ -1,0 +1,28 @@
+.offers-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.offer-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    min-width: 200px;
+    /* Set the width for each item */
+    text-align: center;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.1s forwards ease-in-out;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
