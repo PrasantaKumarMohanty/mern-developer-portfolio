@@ -9,14 +9,14 @@ const Footer = () => {
 
                 {/* First Column - Let's Work Together */}
                 <div className="text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
-                    <h2 style={{ fontFamily: 'Syne, sans-serif' }} className="text-3xl md:text-5xl font-extrabold text-[#ffffff] relative">
+                    <h2 style={{ fontFamily: 'Syne, sans-serif' }} className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#ffffff] relative">
                         <span className="relative z-10">Let's&nbsp;</span>
                         <span className="absolute -left-1 -top-0 bg-[#ffb646] md:w-12 md:h-12 w-8 h-8 rounded-full flex items-center justify-center z-0">
                             <span className="text-white font-bold text-lg">&nbsp;</span>
                         </span>
                         Work Together
                     </h2>
-                    <p className="text-gray-400 my-6 text-md tracking-wide text-justify">
+                    <p className="text-gray-400 my-6 text-sm md:text-md tracking-wide text-center lg:text-left">
                         I'm always open to new opportunities. If you have a project or collaboration in mind, feel free to reach out!
                     </p>
                 </div>
@@ -25,10 +25,10 @@ const Footer = () => {
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
                     className="relative text-center lg:text-left border border-gray-500 p-6 rounded-lg bg-transparent flex flex-col justify-center items-center lg:items-start">
-                    <h4 className="text-2xl font-semibold tracking-wide text-white mb-4">
+                    <h4 className="text-xl md:text-2xl font-semibold tracking-wide text-white mb-4">
                         Looking for a hectic developer?
                     </h4>
-                    <ul className="space-y-4">
+                    <ul className="space-y-4 text-sm md:text-md">
                         <li className="flex items-center tracking-wide font-semibold text-gray-400">
                             <FaEnvelope className="w-5 h-5 mr-2" />
                             mprasantakumar72@gmail.com
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
                     className="relative text-center lg:text-left border border-gray-500 p-6 rounded-lg bg-transparent flex flex-col justify-center items-center lg:items-start">
-                    <h4 className="text-2xl font-semibold tracking-wide text-white mb-4">
+                    <h4 className="text-xl md:text-2xl font-semibold tracking-wide text-white mb-4">
                         Want a more in-depth look at my history?
                     </h4>
                     <div className="flex justify-center lg:justify-start space-x-6">
@@ -91,18 +91,18 @@ const Footer = () => {
             {/* Resume Button & Back to Top */}
             <h1
                 style={{ fontFamily: 'Syne, sans-serif' }}
-                className="px-4 text-2xl md:text-4xl tracking-wider font-extrabold text-[#ffffff] text-center my-8">
+                className="px-4 text-xl md:text-3xl lg:text-4xl tracking-wider font-extrabold text-[#ffffff] text-center my-8">
                 Prasanta Kumar Mohanty
             </h1>
 
             <div className='px-4 flex flex-col lg:flex-row justify-between items-center flex-wrap'>
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
-                    className="text-md md:text-lg tracking-wider font-medium text-[#ffffff] mb-4 lg:mb-0">
+                    className="text-sm md:text-md lg:text-lg tracking-wider font-medium text-[#ffffff] mb-4 lg:mb-0">
                     Thanks For Scrolling.
                 </div>
 
-                <button className="tracking-wider relative px-8 py-2 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
+                <button className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
                     <span className="relative z-20">
                         My Resume 🡥
                     </span>
@@ -111,7 +111,7 @@ const Footer = () => {
 
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
-                    className="text-md md:text-lg tracking-wider font-medium text-[#ffffff]">
+                    className="text-sm md:text-md lg:text-lg tracking-wider font-medium text-[#ffffff]">
                     <a href="#top" className="hover:text-[#ffb646] transition duration-300">Back To Top 🡡</a>
                 </div>
             </div>
