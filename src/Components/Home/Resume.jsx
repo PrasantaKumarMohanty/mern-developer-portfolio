@@ -5,13 +5,12 @@ import { FaReact, FaNodeJs, FaJsSquare } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiNextdotjs } from 'react-icons/si';
 
 const Resume = () => {
-    const resumeTabs = ['About', 'Experience', 'Education', 'Skills', 'Awards'];
-    const [activeTab, setActiveTab] = useState('About');
+    const resumeTabs = ['Work Experience', 'About Me', 'Education', 'Skills', 'Awards'];
+    const [activeTab, setActiveTab] = useState('Work Experience');
 
-    // Tab content based on active tab
     const renderContent = () => {
         switch (activeTab) {
-            case 'About':
+            case 'About Me':
                 return (
                     <div>
                         <h2
@@ -173,7 +172,7 @@ const Resume = () => {
                         </div>
                     </div>
                 );
-            case 'Experience':
+            case 'Work Experience':
                 return (
                     <div>
                         <h2

@@ -47,7 +47,7 @@ const RecentProjects = () => {
 
                         <h3
                             style={{ fontFamily: 'Syne, sans-serif' }}
-                            className="mt-4 text-lg md:text-xl font-semibold text-center text-[#151413]">
+                            className="mt-4 text-lg md:text-xl font-semibold text-[#151413]">
                             Project Name 1
                         </h3>
                     </div>
@@ -73,7 +73,7 @@ const RecentProjects = () => {
 
                         <h3
                             style={{ fontFamily: 'Syne, sans-serif' }}
-                            className="mt-4 text-lg md:text-xl font-semibold text-center text-[#151413]">
+                            className="mt-4 text-lg md:text-xl font-semibold text-[#151413]">
                             Project Name 2
                         </h3>
                     </div>
