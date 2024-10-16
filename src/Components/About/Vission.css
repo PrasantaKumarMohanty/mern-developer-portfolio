@@ -1,0 +1,6 @@
+.stroke-text {
+    -webkit-text-stroke: 1px #151413;
+    /* Black stroke */
+    color: transparent;
+    /* Makes the inside of the text transparent */
+}

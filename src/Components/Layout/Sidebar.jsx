@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import logo from '../../Assets/Logos/mern-logo.png';
-import { BiMenuAltRight } from 'react-icons/bi';
-import { MdOutlineArrowBack, MdOutlineArrowForward, MdOutlineArrowOutward } from 'react-icons/md';
+import { MdOutlineArrowBack, MdOutlineArrowOutward } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = ({
     sidebarOpen,
     setSidebarOpen
 }) => {
+    const navigate = useNavigate();
 
-    // Close sidebar when clicking outside
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (sidebarOpen && !event.target.closest('#sidebar')) {
@@ -65,25 +65,25 @@ const Sidebar = ({
                     style={{ fontFamily: 'Syne, sans-serif' }}
                     className="p-6 tracking-wide">
                     <ul className="space-y-4">
-                        <li className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
+                        <li
+                            onClick={() => navigate('/')}
+                            className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             Home
                             <MdOutlineArrowOutward size={24} />
                         </li>
                         <hr className="border-gray-600" />
 
-                        <li className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
+                        <li
+                            onClick={() => navigate('/about')}
+                            className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             About
                             <MdOutlineArrowOutward size={24} />
                         </li>
                         <hr className="border-gray-600" />
 
-                        <li className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
-                            Services
-                            <MdOutlineArrowOutward size={24} />
-                        </li>
-                        <hr className="border-gray-600" />
-
-                        <li className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
+                        <li
+                            onClick={() => navigate('/contact')}
+                            className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             Contact
                             <MdOutlineArrowOutward size={24} />
                         </li>
