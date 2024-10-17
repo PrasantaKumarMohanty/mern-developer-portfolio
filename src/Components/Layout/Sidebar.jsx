@@ -82,6 +82,14 @@ const Sidebar = ({
                         <hr className="border-gray-600" />
 
                         <li
+                            onClick={() => navigate('/projects')}
+                            className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
+                            My Projects
+                            <MdOutlineArrowOutward size={24} />
+                        </li>
+                        <hr className="border-gray-600" />
+
+                        <li
                             onClick={() => navigate('/contact')}
                             className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             Contact
