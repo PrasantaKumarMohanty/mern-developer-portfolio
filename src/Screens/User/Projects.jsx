@@ -3,8 +3,11 @@ import SecondaryNavbar from '../../Components/Layout/SecondaryNavbar';
 import project1 from '../../Assets/Projects/project1.png';
 import project2 from '../../Assets/Projects/project2.png';
 import { MdArrowOutward } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <SecondaryNavbar />
@@ -31,7 +34,9 @@ const Projects = () => {
 
           {/* 1st row */}
           <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
-            <div className='w-full md:w-[40%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[40%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -57,7 +62,9 @@ const Projects = () => {
               </h3>
             </div>
 
-            <div className='w-full md:w-[60%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[60%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -86,7 +93,9 @@ const Projects = () => {
 
           {/* 2nd row */}
           <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8 mt-8">
-            <div className='w-full md:w-[33%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[33%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -112,7 +121,9 @@ const Projects = () => {
               </h3>
             </div>
 
-            <div className='w-full md:w-[33%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[33%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -138,7 +149,9 @@ const Projects = () => {
               </h3>
             </div>
 
-            <div className='w-full md:w-[33%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[33%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -167,7 +180,9 @@ const Projects = () => {
 
           {/* 3rd row */}
           <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8 mt-8">
-            <div className='w-full md:w-[60%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[60%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img
@@ -193,7 +208,9 @@ const Projects = () => {
               </h3>
             </div>
 
-            <div className='w-full md:w-[40%] cursor-pointer'>
+            <div
+              onClick={() => navigate('/project-details')}
+              className='w-full md:w-[40%] cursor-pointer'>
               <div
                 className="relative group w-full h-80 bg-gray-200 overflow-hidden rounded-lg">
                 <img

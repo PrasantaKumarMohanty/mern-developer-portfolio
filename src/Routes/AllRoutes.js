@@ -4,14 +4,14 @@ import Home from "../Screens/User/Home";
 import About from "../Screens/User/About";
 import Contact from "../Screens/User/Contact";
 import Projects from "../Screens/User/Projects";
-import Blogs from "../Screens/User/Blogs";
+import ProjectDetails from "../Screens/User/ProjectDetails";
 
 const userRoutes = [
   { path: "/", component: <Home /> },
   { path: "/about", component: <About /> },
   { path: "/contact", component: <Contact /> },
   { path: "/projects", component: <Projects /> },
-  { path: "/blogs", component: <Blogs /> },
+  { path: "/project-details", component: <ProjectDetails /> },
   { path: "*", component: <NotFound /> },
 ];
 
