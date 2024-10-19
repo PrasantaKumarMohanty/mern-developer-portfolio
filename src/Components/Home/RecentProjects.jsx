@@ -1,8 +1,11 @@
 import React from 'react';
 import project1 from '../../Assets/Projects/project1.png';
 import project2 from '../../Assets/Projects/project2.png';
+import { useNavigate } from 'react-router-dom';
 
 const RecentProjects = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="bg-[#ffe9d9] min-h-screen">
             <div className="container mx-auto py-10 px-6 md:px-8 lg:px-12 w-full">
@@ -36,10 +39,12 @@ const RecentProjects = () => {
 
                         <div className="flex justify-start gap-4 mt-4">
                             <button
+                                onClick={() => navigate('/projects')}
                                 className="border border-gray-600 px-4 py-1 bg-transparent hover:bg-[#151413] text-gray-600 hover:text-white text-sm rounded-lg transition-transform transform hover:scale-105">
                                 App
                             </button>
                             <button
+                                onClick={() => navigate('/projects')}
                                 className="border border-gray-600 px-4 py-1 bg-transparent hover:bg-[#ffb646] text-gray-600 hover:text-white text-sm rounded-lg transition-transform transform hover:scale-105">
                                 Web
                             </button>
@@ -62,10 +67,12 @@ const RecentProjects = () => {
 
                         <div className="flex justify-start gap-4 mt-4">
                             <button
+                                onClick={() => navigate('/projects')}
                                 className="border border-gray-600 px-4 py-1 bg-transparent hover:bg-[#151413] text-gray-600 hover:text-white text-sm rounded-lg transition-transform transform hover:scale-105">
                                 App
                             </button>
                             <button
+                                onClick={() => navigate('/projects')}
                                 className="border border-gray-600 px-4 py-1 bg-transparent hover:bg-[#ffb646] text-gray-600 hover:text-white text-sm rounded-lg transition-transform transform hover:scale-105">
                                 Web
                             </button>
@@ -82,6 +89,7 @@ const RecentProjects = () => {
                 {/* View All Projects Button */}
                 <div className="text-center mt-12">
                     <button
+                        onClick={() => navigate('/projects')}
                         className="px-6 py-3 bg-[#151413] hover:bg-[#ffb646] text-white text-lg font-semibold rounded-md shadow-lg transition-transform transform hover:scale-105"
                         style={{ fontFamily: 'Syne, sans-serif' }}>
                         View All Projects 🡥

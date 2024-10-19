@@ -1,11 +1,14 @@
 import React from 'react';
-import img6 from '../../Assets/Tools/ubuntu.png';
+import windows from '../../Assets/Tools/windows10Logo.png';
+import mac from '../../Assets/Tools/macLogo.png';
+import linux from '../../Assets/Tools/linuxLogo.png';
+import ubuntu from '../../Assets/Tools/ubuntu.png';
 
 const images = [
-    { src: img6, name: 'Windows OS' },
-    { src: img6, name: 'Mac OS' },
-    { src: img6, name: 'Linux OS' },
-    { src: img6, name: 'Ubuntu OS' },
+    { src: mac, name: 'Mac OS' },
+    { src: linux, name: 'Linux OS' },
+    { src: windows, name: 'Windows OS' },
+    { src: ubuntu, name: 'Ubuntu OS' },
 ];
 
 const Os = () => {

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { BsStars } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
-import { FaReact, FaNodeJs, FaJsSquare } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiNextdotjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaJsSquare, FaBootstrap } from 'react-icons/fa';
+import { SiAmazonaws, SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { TbBrandMysql, TbBrandReactNative, TbBrandRedux } from 'react-icons/tb';
 
 const Resume = () => {
     const resumeTabs = ['Work Experience', 'About Me', 'Education', 'Skills', 'Awards'];
@@ -19,9 +20,9 @@ const Resume = () => {
                             About Me
                         </h2>
                         <p className="text-gray-600 text-lg font-semibold mb-6">
-                            Prasanta Kumar Mohanty, Product Designer, based in German. That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for,
+                            Prasanta Kumar Mohanty, a passionate Software Developer specializing in the MERN stack, dedicated to crafting seamless Web & Mobile applications. I thrive on transforming ideas into reality, using my expertise in MongoDB, Express.js, React.js, React Native and Node.js.
                             <br /><br />
-                            but words that truly land with those that read them, calling your audience in and making them want more.
+                            My goal is to build dynamic, user-friendly solutions that not only meet client needs but also enhance user experiences, driving engagement and satisfaction.
                         </p>
 
                         <div className="space-y-4 text-sm md:text-lg font-semibold tracking-wider">
@@ -181,7 +182,7 @@ const Resume = () => {
                             Experience
                         </h2>
                         <p className="text-[#151413] text-lg tracking-wide font-semibold mb-6">
-                            This section outlines work experience, job roles, and professional achievements.
+                            An overview of my career highlights, emphasizing my key roles, accomplishments, and the impact I’ve made across diverse projects and teams.
                         </p>
 
                         {/* Experience Cards Section */}
@@ -283,7 +284,7 @@ const Resume = () => {
                             Skills
                         </h2>
                         <p className="text-[#151413] text-lg tracking-wide font-semibold mb-6">
-                            Highlight key skills here. Whether it's programming, management, or design, list them for a quick overview.
+                            A blend of technical proficiency, creativity, and problem-solving across full-stack development.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -297,6 +298,19 @@ const Resume = () => {
                                         React Js
                                     </h3>
                                     <p className="text-gray-600 tracking-wide">Proficiency: 90%</p>
+                                </div>
+                            </div>
+
+                            {/* React Native */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#61dafb] text-4xl mr-4">
+                                    <TbBrandReactNative />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        React Native
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 85%</p>
                                 </div>
                             </div>
 
@@ -335,7 +349,7 @@ const Resume = () => {
                                     <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
                                         MongoDB
                                     </h3>
-                                    <p className="text-gray-600 tracking-wide">Proficiency: 75%</p>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 90%</p>
                                 </div>
                             </div>
 
@@ -348,7 +362,7 @@ const Resume = () => {
                                     <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
                                         Next Js
                                     </h3>
-                                    <p className="text-gray-600 tracking-wide">Proficiency: 75%</p>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 85%</p>
                                 </div>
                             </div>
 
@@ -361,11 +375,77 @@ const Resume = () => {
                                     <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
                                         JavaScript
                                     </h3>
-                                    <p className="text-gray-600 tracking-wide">Proficiency: 75%</p>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 85%</p>
+                                </div>
+                            </div>
+
+                            {/* Redux */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#764abc] text-4xl mr-4">
+                                    <TbBrandRedux />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        Redux
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 90%</p>
+                                </div>
+                            </div>
+
+                            {/* Tailwind CSS */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#06b6d4] text-4xl mr-4">
+                                    <SiTailwindcss />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        Tailwind CSS
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 95%</p>
+                                </div>
+                            </div>
+
+                            {/* AWS */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#FF9900] text-4xl mr-4">
+                                    <SiAmazonaws />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        AWS
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 70%</p>
+                                </div>
+                            </div>
+
+                            {/* Bootstarp */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#7c11f3] text-4xl mr-4">
+                                    <FaBootstrap />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        Bootstrap
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 90%</p>
+                                </div>
+                            </div>
+
+                            {/* MySQL */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex transition-transform transform hover:scale-105">
+                                <div className="text-[#42759c] text-4xl mr-4">
+                                    <TbBrandMysql />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 style={{ fontFamily: 'Syne, sans-serif' }} className="text-xl font-bold text-[#151413] mb-1">
+                                        MySQL
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide">Proficiency: 80%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 );
             case 'Awards':
                 return (
@@ -384,7 +464,7 @@ const Resume = () => {
                             {/* Row 1 */}
                             <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
                                 <div className="text-md text-gray-600 mb-4 tracking-wide">
-                                    May 2022
+                                    Feb 2024
                                 </div>
 
                                 <div className='flex items-center mb-2 gap-2'>
@@ -399,7 +479,7 @@ const Resume = () => {
                                 <h3
                                     style={{ fontFamily: 'Syne, sans-serif' }}
                                     className="text-2xl font-bold text-[#151413] mb-2">
-                                    Best Software Developer Award
+                                    Employee of the Month
                                 </h3>
                                 <p className="text-gray-600 tracking-wide">
                                     Recognized for exceptional development work and leadership on a large-scale MERN stack project.
@@ -408,7 +488,32 @@ const Resume = () => {
 
                             <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
                                 <div className="text-md text-gray-600 mb-4 tracking-wide">
-                                    Nov 2021
+                                    Mar 2023
+                                </div>
+
+                                <div className='flex items-center mb-2 gap-2'>
+                                    <div>
+                                        <GoDotFill size={18} color='#ffb646' />
+                                    </div>
+                                    <p className="text-[#151413] tracking-wide text-lg">
+                                        Zotto Pvt. Ltd. (Remote)
+                                    </p>
+                                </div>
+
+                                <h3
+                                    style={{ fontFamily: 'Syne, sans-serif' }}
+                                    className="text-2xl font-bold text-[#151413] mb-2">
+                                    Outstanding Timeliness Award
+                                </h3>
+                                <p className="text-gray-600 tracking-wide">
+                                    Awarded for completing the project ahead of the timeline, showcasing exceptional efficiency and time management.
+                                </p>
+                            </div>
+
+                            {/* Row 2 */}
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                                <div className="text-md text-gray-600 mb-4 tracking-wide">
+                                    Dec 2022
                                 </div>
 
                                 <div className='flex items-center mb-2 gap-2'>
@@ -430,31 +535,6 @@ const Resume = () => {
                                 </p>
                             </div>
 
-                            {/* Row 2 */}
-                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-                                <div className="text-md text-gray-600 mb-4 tracking-wide">
-                                    Aug 2021
-                                </div>
-
-                                <div className='flex items-center mb-2 gap-2'>
-                                    <div>
-                                        <GoDotFill size={18} color='#ffb646' />
-                                    </div>
-                                    <p className="text-[#151413] tracking-wide text-lg">
-                                        Nettantra Technology
-                                    </p>
-                                </div>
-
-                                <h3
-                                    style={{ fontFamily: 'Syne, sans-serif' }}
-                                    className="text-2xl font-bold text-[#151413] mb-2">
-                                    Rising Star Award
-                                </h3>
-                                <p className="text-gray-600 tracking-wide">
-                                    Recognized as a rising star for significant contributions as a Junior Developer.
-                                </p>
-                            </div>
-
                             <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
                                 <div className="text-md text-gray-600 mb-4 tracking-wide">
                                     Feb 2021
@@ -465,17 +545,17 @@ const Resume = () => {
                                         <GoDotFill size={18} color='#ffb646' />
                                     </div>
                                     <p className="text-[#151413] tracking-wide text-lg">
-                                        Lit, Bhubaneswar
+                                        IIT Madras (Remote)
                                     </p>
                                 </div>
 
                                 <h3
                                     style={{ fontFamily: 'Syne, sans-serif' }}
                                     className="text-2xl font-bold text-[#151413] mb-2">
-                                    Outstanding Intern Award
+                                    IIT Madras Innovation Project
                                 </h3>
                                 <p className="text-gray-600 tracking-wide">
-                                    Awarded for exceptional performance and dedication during the Django internship.
+                                    Selected to work on a project at IIT Madras Research Park during my college years, highlighting my skills and dedication to innovation.
                                 </p>
                             </div>
                         </div>

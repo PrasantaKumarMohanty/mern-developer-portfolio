@@ -25,8 +25,8 @@ const HomeAbout = () => {
                                 <span className="font-extrabold text-2xl md:text-5xl text-[#151413]">3+</span>
                             </div>
 
-                            <div className="font-semibold text-2xl md:text-4xl stroke-text text-transparent">
-                                years of<br /> Experience
+                            <div className="font-semibold tracking-wider text-2xl md:text-4xl stroke-text text-transparent">
+                                Years of<br /> Experience
                             </div>
                         </div>
                     </div>
@@ -83,10 +83,10 @@ const HomeAbout = () => {
                                 <h3
                                     style={{ fontFamily: 'Syne, sans-serif' }}
                                     className="mb-2 text-3xl md:text-4xl font-extrabold text-[#151413]">
-                                    25+
+                                    3+
                                 </h3>
                                 <p className="text-lg md:text-xl font-semibold text-gray-600 tracking-wide">
-                                    Total Projects
+                                    Relevant experience
                                 </p>
                             </div>
 
@@ -95,10 +95,10 @@ const HomeAbout = () => {
                                 <h3
                                     style={{ fontFamily: 'Syne, sans-serif' }}
                                     className="mb-2 text-3xl md:text-4xl font-extrabold text-[#151413]">
-                                    30+
+                                    16+
                                 </h3>
                                 <p className="text-lg md:text-xl font-semibold text-gray-600 tracking-wide">
-                                    Total Clients
+                                    Total Projects
                                 </p>
                             </div>
                         </div>
