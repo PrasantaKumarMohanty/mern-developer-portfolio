@@ -111,7 +111,7 @@ const Footer = () => {
 
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
-                    className="text-sm md:text-md lg:text-lg tracking-wider font-medium text-[#ffffff]">
+                    className="text-sm md:text-md lg:text-lg mt-4 lg:mt-0 tracking-wider font-medium text-[#ffffff]">
                     <a href="#top" className="hover:text-[#ffb646] transition duration-300">Back To Top 🡡</a>
                 </div>
             </div>

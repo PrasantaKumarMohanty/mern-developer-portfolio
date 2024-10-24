@@ -11,11 +11,17 @@ import img9 from '../../Assets/Skills/scss.png';
 import img10 from '../../Assets/Skills/tailwind.png';
 import img11 from '../../Assets/Skills/javascript.png';
 import img12 from '../../Assets/Skills/material-ui.png';
-import img13 from '../../Assets/Skills/formik-icon.png';
+import img13 from '../../Assets/Skills/Formik.png';
 import img14 from '../../Assets/Skills/git.png';
-import img15 from '../../Assets/Skills/github.png';
+import img15 from '../../Assets/Skills/github 1.png';
 import img16 from '../../Assets/Skills/Amazon-S3.png';
 import img17 from '../../Assets/Skills/ec2.png';
+import img18 from '../../Assets/Skills/gitlab 1.png';
+import img19 from '../../Assets/Skills/bitbucket 1.png';
+import img20 from '../../Assets/Skills/nextjs.png';
+import img21 from '../../Assets/Skills/react-native.png';
+import img22 from '../../Assets/Skills/bootstrap.png';
+import img23 from '../../Assets/Skills/apollo 1.png';
 
 const images = [
     { src: img1, name: 'ReactJS' },
@@ -24,17 +30,23 @@ const images = [
     { src: img4, name: 'MongoDB' },
     { src: img5, name: 'Mongoose' },
     { src: img6, name: 'Redux' },
+    { src: img20, name: 'NextJs' },
+    { src: img21, name: 'React Native' },
+    { src: img11, name: 'JavaScript' },
     { src: img7, name: 'HTML' },
     { src: img8, name: 'CSS' },
     { src: img9, name: 'SCSS' },
     { src: img10, name: 'Tailwind CSS' },
-    { src: img11, name: 'JavaScript' },
+    { src: img22, name: 'Bootstrap' },
     { src: img12, name: 'Material UI' },
     { src: img13, name: 'Formik' },
+    { src: img23, name: 'Apollo Client' },
     { src: img14, name: 'Git' },
     { src: img15, name: 'GitHub' },
+    { src: img18, name: 'Gitlab' },
+    { src: img19, name: 'Bitbucket' },
     { src: img16, name: 'Amazon S3' },
-    { src: img17, name: 'EC2' }
+    { src: img17, name: 'EC2' },
 ];
 
 const Skills = () => {

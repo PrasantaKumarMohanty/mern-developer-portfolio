@@ -106,10 +106,10 @@ const Resume = () => {
                         {/* Education Cards Section */}
                         <div className="space-y-4">
                             {/* Card 1 */}
-                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-between transition-transform transform hover:scale-105">
-                                <div className="text-md text-gray-600 mb-4 tracking-wide">
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-end transition-transform transform hover:scale-105">
+                                {/* <div className="text-md text-gray-600 mb-4 tracking-wide">
                                     2018 - 2021
-                                </div>
+                                </div> */}
                                 <div>
                                     <div className='flex justify-end items-center mb-2 gap-2'>
                                         <div>
@@ -128,10 +128,10 @@ const Resume = () => {
                             </div>
 
                             {/* Card 2 */}
-                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-between transition-transform transform hover:scale-105">
-                                <div className="text-md text-gray-600 mb-4 tracking-wide">
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-end transition-transform transform hover:scale-105">
+                                {/* <div className="text-md text-gray-600 mb-4 tracking-wide">
                                     2014 - 2018
-                                </div>
+                                </div> */}
                                 <div>
                                     <div className='flex items-center justify-end mb-2 gap-2'>
                                         <div>
@@ -150,10 +150,10 @@ const Resume = () => {
                             </div>
 
                             {/* Card 3 */}
-                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-between transition-transform transform hover:scale-105">
-                                <div className="text-md text-gray-600 mb-4 tracking-wide">
+                            <div className="bg-[#ebebeb] hover:bg-white hover:shadow-lg rounded-lg p-6 flex flex-col sm:flex-row justify-end transition-transform transform hover:scale-105">
+                                {/* <div className="text-md text-gray-600 mb-4 tracking-wide">
                                     2012 - 2014
-                                </div>
+                                </div> */}
                                 <div>
                                     <div className='flex items-center justify-end mb-2 gap-2'>
                                         <div>

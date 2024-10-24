@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
 import logo from '../../Assets/Logos/mern-logo.png';
 import Sidebar from './Sidebar';
+import { useNavigate } from 'react-router-dom';
+import ContactModal from '../Common/ContactModal';
 
 const SecondaryNavbar = () => {
+  const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   return (
     <React.Fragment>
@@ -13,8 +20,15 @@ const SecondaryNavbar = () => {
         setSidebarOpen={setSidebarOpen}
       />
 
+      <ContactModal
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+      />
+
       <nav className="px-10 py-4 border-b border-[#151413] top-0 left-0 w-full flex justify-between items-center bg-gradient-to-l from-[#ffb646] to-[#ffffff] z-[100]">
-        <div className="text-[#151413] text-2xl font-extrabold flex items-center gap-2">
+        <div
+          onClick={() => navigate('/')}
+          className="text-[#151413] text-2xl font-extrabold flex items-center gap-2 cursor-pointer">
           <img
             src={logo}
             className="w-auto h-12 object-contain"
@@ -34,9 +48,11 @@ const SecondaryNavbar = () => {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="relative hidden md:flex items-center gap-2 font-semibold text-xl cursor-pointer group">
+          <button
+            onClick={handleOpenModal}
+            className="relative hidden md:flex items-center gap-2 font-semibold text-xl cursor-pointer group">
             <p className="relative text-gray-900 group-hover:text-red-500 transition duration-300">
-              Let's Talk
+              Let's Connect
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

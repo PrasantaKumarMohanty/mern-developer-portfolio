@@ -33,7 +33,7 @@ const SpecialitiesSection = () => {
                     {/* Right: Description */}
                     <div className="flex flex-col justify-center">
                         <p className="text-lg md:text-xl text-gray-600 text-justify">
-                            I specialize in full-stack development with a focus on the MERN stack (MongoDB, Express.js, React.js, and Node.js), along with expertise in web hosting, AWS cloud services, and mobile application development, enabling me to build scalable web and mobile applications, create robust APIs, and ensure seamless front-end and back-end integration.
+                            I specialize in full-stack development with a focus on the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js). With expertise in <strong>web hosting, AWS cloud services</strong>, and <strong>mobile app development</strong>, I build scalable, high-performance applications and robust APIs, ensuring seamless <strong>front-end and back-end</strong> integration.
                         </p>
                     </div>
                 </div>
@@ -43,38 +43,39 @@ const SpecialitiesSection = () => {
                     <div className="md:col-span-2 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Small Cards */}
                         {[
-                            { title: "Web Development (MERN)", icon: <FaLaptopCode size={26} /> },
-                            { title: "App Development (React Native)", icon: <TbDeviceMobileCode size={26} /> },
-                            { title: "Full MERN Stack Development", icon: <FaCogs size={26} /> },
-                            { title: "React Redux", icon: <TbBrandRedux size={26} /> },
-                            { title: "AWS Cloud Services", icon: <FaAws size={26} /> },
-                            { title: "Rest API's", icon: <TbSettingsCode size={26} /> },
+                            { title: "MERN Stack Web Development", icon: <FaLaptopCode size={26} /> },
+                            { title: "Mobile App Development (React Native)", icon: <TbDeviceMobileCode size={26} /> },
+                            { title: "Full-Stack Development (MERN)", icon: <FaCogs size={26} /> },
+                            { title: "State Management with React Redux", icon: <TbBrandRedux size={26} /> },
+                            { title: "AWS Cloud Solutions", icon: <FaAws size={26} /> },
+                            { title: "RESTful API Development", icon: <TbSettingsCode size={26} /> },
 
-                            // { title: "Mongo DB", icon: <FaDatabase size={26} /> },
-                            // { title: "Express Js", icon: <FaServer size={26} /> },
-                        ].map((speciality, index) => (
-                            <div
-                                key={index}
-                                className="bg-[#f5f5f5] p-6 rounded-lg shadow-md text-[#151413] transition-transform transform hover:scale-105 hover:bg-white hover:shadow-lg hover:text-[#ffb646] hover:cursor-pointer"
-                            >
-                                <div className="shadow-md bg-[#ffffff] rounded-full w-12 h-12 mb-4 flex items-center justify-center mr-4">
-                                    {speciality.icon}
-                                </div>
-                                <div className="w-full flex justify-between items-center">
-                                    <h3
-                                        style={{ fontFamily: 'Syne, sans-serif' }}
-                                        className="text-lg md:text-xl font-semibold"
-                                    >
-                                        {speciality.title}
-                                    </h3>
-                                    <div className="h-16 w-auto flex items-center">
-                                        <MdArrowOutward
-                                            size={28}
-                                        />
+                            // { title: "Database Management (MongoDB)", icon: <FaDatabase size={26} /> },
+                            // { title: "Backend Framework (Express.js)", icon: <FaServer size={26} /> },
+                        ]
+                            .map((speciality, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-[#f5f5f5] p-6 rounded-lg shadow-md text-[#151413] transition-transform transform hover:scale-105 hover:bg-white hover:shadow-lg hover:text-[#ffb646] hover:cursor-pointer"
+                                >
+                                    <div className="shadow-md bg-[#ffffff] rounded-full w-12 h-12 mb-4 flex items-center justify-center mr-4">
+                                        {speciality.icon}
+                                    </div>
+                                    <div className="w-full flex justify-between items-center">
+                                        <h3
+                                            style={{ fontFamily: 'Syne, sans-serif' }}
+                                            className="text-lg md:text-xl font-semibold"
+                                        >
+                                            {speciality.title}
+                                        </h3>
+                                        <div className="h-16 w-auto flex items-center">
+                                            <MdArrowOutward
+                                                size={28}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
                     </div>
 
                     {/* Right Side - Contact Card */}

@@ -29,7 +29,7 @@ const Os = () => {
                         <span className="absolute -left-1 -top-0 bg-[#ffb646] md:w-12 md:h-12 w-8 h-8 rounded-full flex items-center justify-center z-0">
                             <span className="text-white font-bold text-lg">&nbsp;</span>
                         </span>
-                        & Systems
+                        Systems
                     </h2>
                 </div>
 

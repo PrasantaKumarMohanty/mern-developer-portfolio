@@ -5,9 +5,16 @@ import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import CircularButton from "./CircularButton";
 import logo from '../../Assets/Logos/mern-logo.png';
 import Sidebar from "../Layout/Sidebar";
+import { useNavigate } from "react-router-dom";
+import ContactModal from "../Common/ContactModal";
 
 const HeroSection = () => {
+    const navigate = useNavigate();
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleOpenModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
 
     return (
         <React.Fragment>
@@ -15,9 +22,16 @@ const HeroSection = () => {
                 sidebarOpen={sidebarOpen}
                 setSidebarOpen={setSidebarOpen} />
 
+            <ContactModal
+                showModal={showModal}
+                handleCloseModal={handleCloseModal}
+            />
+
             <div className="relative h-screen bg-cover bg-center bg-[#ffe9d9]">
                 <nav className="absolute px-10 py-4 border-b border-[#151413] top-0 left-0 w-full flex justify-between items-center bg-transparent z-[100]">
-                    <div className="text-[#151413] text-2xl font-extrabold flex items-center gap-2">
+                    <div
+                        onClick={() => navigate('/')}
+                        className="text-[#151413] text-2xl font-extrabold flex items-center gap-2 cursor-pointer">
                         <img
                             src={logo}
                             className="w-auto h-12 object-contain"
@@ -38,8 +52,10 @@ const HeroSection = () => {
 
                     <div className="flex items-center gap-6">
                         <button className="relative hidden md:flex items-center gap-2 font-semibold text-xl cursor-pointer group">
-                            <p className="relative text-gray-900 group-hover:text-red-500 transition duration-300">
-                                Let's Talk
+                            <p
+                                onClick={handleOpenModal}
+                                className="relative text-gray-900 group-hover:text-red-500 transition duration-300">
+                                Let's Connect
                             </p>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +92,7 @@ const HeroSection = () => {
                 </nav>
 
                 <div className="container mx-auto h-full flex flex-col-reverse md:flex-row items-center justify-between relative z-10 px-6 md:px-0">
-                    <div className="md:w-1/2 z-10 text-center md:text-left text-[#151413] mt-14 md:mt-44">
+                    <div className="md:w-1/2 z-10 text-center md:text-left text-[#151413] mt-0 md:mt-44">
                         <div
                             style={{ fontFamily: 'Syne, sans-serif' }}
                             className="text-2xl md:text-3xl tracking-wide font-bold mb-2">
@@ -101,22 +117,26 @@ const HeroSection = () => {
                             Software Development Engineer - II
                         </p>
                         <p className="text-md md:text-xl mb-10">
-                            3 years of experience in MERN stack
+                            With 3+ years of expertise in <strong>MERN stack</strong>
                         </p>
 
                         <div
                             style={{ fontFamily: 'Syne, sans-serif' }}
                             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <button className="tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-lg font-semibold hover:ring-1 ring-[#151413] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
+                            <button
+                                onClick={handleOpenModal}
+                                className="tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-lg font-semibold hover:ring-1 ring-[#151413] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
                                 <span className="relative z-20">
-                                    Let's Talk 🡥
+                                    Let's Connect 🡥
                                 </span>
                                 <div className="absolute inset-0 bg-[#ffe9d9] w-0 h-full ring-1 ring-[#151413] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                             </button>
 
-                            <button className="tracking-wider relative px-8 py-3 bg-[#ffe9d9] text-[#151413] text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 border border-[#151413] hover:text-[#ffffff] transition-all duration-300 group">
+                            <button
+                                onClick={() => navigate('/projects')}
+                                className="tracking-wider relative px-8 py-3 bg-[#ffe9d9] text-[#151413] text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 border border-[#151413] hover:text-[#ffffff] transition-all duration-300 group">
                                 <span className="relative z-20">
-                                    My Works 🡥
+                                    View My Work 🡥
                                 </span>
                                 <div className="absolute inset-0 bg-[#151413] w-0 h-full transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                             </button>
@@ -159,7 +179,9 @@ const HeroSection = () => {
                     />
                 </div>
 
-                <div className="hidden md:block absolute left-1/4 md:left-[48%] top-[85%] transform -translate-y-1/2 z-20">
+                <div
+                    onClick={handleOpenModal}
+                    className="hidden md:block cursor-pointer absolute left-1/4 md:left-[48%] top-[85%] transform -translate-y-1/2 z-20">
                     <CircularButton />
                 </div>
             </div>

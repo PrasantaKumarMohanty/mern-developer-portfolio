@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdArrowOutward } from "react-icons/md";
-import roundText from '../../Assets/Home/demoText.webp';
+import roundText from '../../Assets/Home/demoText.png';
 import './CircularButton.css';
 
 const CircularButton = () => {
