@@ -1,5 +1,6 @@
 import React from 'react';
 import img1 from '../../Assets/About/about2.png';
+import sig_pic from '../../Assets/About/own_signature.png';
 
 const AboutMe = () => {
     return (
@@ -44,19 +45,19 @@ const AboutMe = () => {
                         <div
                             style={{ fontFamily: 'Syne, sans-serif' }}
                             className="text-sm md:text-lg font-semibold text-gray-600 mb-6 text-justify">
-                            A Developer and I am in the game for over 7+ years. I am proud of my works and ready to face the next challenge.
+                            With over 3 years of experience as a developer, I'm passionate about building solutions that make an impact. I bring pride and dedication to every project, always ready for the next challenge.
                         </div>
 
                         <p className="text-lg md:text-xl mb-6 text-gray-600 text-justify">
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them .
+                            As a creative problem-solver, I focus not just on code, but on crafting an experience that resonates with users. My goal is to develop solutions that reflect your vision and values, drawing in your audience and making a lasting connection.
                         </p>
 
-                        <div className="mt-4">
-                            <p
-                                style={{ fontFamily: 'cursive' }}
-                                className="text-[#151413] tracking-wide text-3xl">
-                                𝒫𝓇𝒶𝓈𝒶𝓃𝓉𝒶 𝒦𝓊𝓂𝒶𝓇 𝑀𝑜𝒽𝒶𝓃𝓉𝓎
-                            </p>
+                        <div className="w-full justify-start">
+                            <img
+                                src={sig_pic}
+                                className='w-auto h-32 object-contain'
+                                alt="sig-pic"
+                            />
                         </div>
                     </div>
                 </div>

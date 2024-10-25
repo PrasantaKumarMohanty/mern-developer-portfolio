@@ -22,12 +22,17 @@ const Sidebar = ({
         };
     }, [sidebarOpen, setSidebarOpen]);
 
+    const handleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    }
+
     return (
         <React.Fragment>
             {/* Backdrop overlay */}
             {sidebarOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-[200]"
+                    className="fixed inset-0 bg-[#151413] bg-opacity-50 z-[200]"
                     onClick={() => setSidebarOpen(false)}
                 ></div>
             )}
@@ -42,8 +47,9 @@ const Sidebar = ({
             >
                 <div className="p-4 flex justify-between items-center border-b border-gray-600">
                     <img
+                        onClick={() => handleNavigation('/')}
                         src={logo}
-                        className="w-auto h-12 object-contain"
+                        className="w-auto h-12 object-contain cursor-pointer"
                         alt="logo"
                     />
 
@@ -66,7 +72,7 @@ const Sidebar = ({
                     className="p-6 tracking-wide">
                     <ul className="space-y-4">
                         <li
-                            onClick={() => navigate('/')}
+                            onClick={() => handleNavigation('/')}
                             className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             Home
                             <MdOutlineArrowOutward size={24} />
@@ -74,7 +80,7 @@ const Sidebar = ({
                         <hr className="border-gray-600" />
 
                         <li
-                            onClick={() => navigate('/about')}
+                            onClick={() => handleNavigation('/about')}
                             className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             About
                             <MdOutlineArrowOutward size={24} />
@@ -82,7 +88,7 @@ const Sidebar = ({
                         <hr className="border-gray-600" />
 
                         <li
-                            onClick={() => navigate('/projects')}
+                            onClick={() => handleNavigation('/projects')}
                             className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             My Projects
                             <MdOutlineArrowOutward size={24} />
@@ -90,7 +96,7 @@ const Sidebar = ({
                         <hr className="border-gray-600" />
 
                         <li
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handleNavigation('/contact')}
                             className="py-1 cursor-pointer flex justify-between items-center hover:text-[#ffb646] transition-colors duration-200">
                             Contact
                             <MdOutlineArrowOutward size={24} />

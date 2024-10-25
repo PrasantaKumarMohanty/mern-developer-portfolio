@@ -73,7 +73,7 @@ const ContactModal = ({ showModal, handleCloseModal }) => {
     return (
         <React.Fragment>
             {showModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[200]">
+                <div className="fixed inset-0 bg-[#151413] bg-opacity-50 flex justify-center items-center z-[200]">
                     <div
                         ref={modalRef}
                         className="relative bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 xl:w-2/3 flex flex-col p-6"
@@ -293,7 +293,7 @@ export default ContactModal;
 //     return (
 //         <React.Fragment>
 //             {showModal && (
-//                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[200]">
+//                 <div className="fixed inset-0 bg-[#151413] bg-opacity-50 flex justify-center items-center z-[200]">
 //                     <div
 //                         ref={modalRef}
 //                         className="relative bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 xl:w-2/3 flex flex-col p-6"

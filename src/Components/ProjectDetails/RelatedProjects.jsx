@@ -30,7 +30,7 @@ const RelatedProjects = () => {
             <div key={idx} className="w-full md:w-[30%] cursor-pointer relative group">
               <div className="relative w-full h-72 sm:h-80 bg-gray-200 rounded-lg overflow-hidden">
                 <img src={img} alt={`project-${idx}`} className="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300 transform group-hover:scale-110" />
-                <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-[#151413] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-lg md:text-2xl font-bold text-white">Project {idx + 1}</p>
                 </div>
                 <div className="absolute top-4 right-4 text-white">

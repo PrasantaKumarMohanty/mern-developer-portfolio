@@ -111,9 +111,29 @@ const Footer = () => {
 
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
+                    className="text-sm md:text-md lg:text-lg mt-4 lg:mt-0 tracking-wider font-medium text-[#ffffff]"
+                >
+                    <a
+                        href="#top"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth"
+                            });
+                        }}
+                        className="hover:text-[#ffb646] transition duration-300"
+                    >
+                        Back To Top 🡡
+                    </a>
+                </div>
+
+
+                {/* <div
+                    style={{ fontFamily: 'Syne, sans-serif' }}
                     className="text-sm md:text-md lg:text-lg mt-4 lg:mt-0 tracking-wider font-medium text-[#ffffff]">
                     <a href="#top" className="hover:text-[#ffb646] transition duration-300">Back To Top 🡡</a>
-                </div>
+                </div> */}
             </div>
 
             {/* Bottom Section - Name */}

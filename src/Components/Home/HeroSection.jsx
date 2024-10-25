@@ -7,6 +7,7 @@ import logo from '../../Assets/Logos/mern-logo.png';
 import Sidebar from "../Layout/Sidebar";
 import { useNavigate } from "react-router-dom";
 import ContactModal from "../Common/ContactModal";
+import FloatingButton from "../Common/FloatingButton";
 
 const HeroSection = () => {
     const navigate = useNavigate();
@@ -15,6 +16,11 @@ const HeroSection = () => {
 
     const handleOpenModal = () => setShowModal(true);
     const handleCloseModal = () => setShowModal(false);
+
+    const handleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <React.Fragment>
@@ -27,10 +33,15 @@ const HeroSection = () => {
                 handleCloseModal={handleCloseModal}
             />
 
+            <FloatingButton
+                sidebarOpen={sidebarOpen}
+                setSidebarOpen={setSidebarOpen}
+            />
+
             <div className="relative h-screen bg-cover bg-center bg-[#ffe9d9]">
                 <nav className="absolute px-10 py-4 border-b border-[#151413] top-0 left-0 w-full flex justify-between items-center bg-transparent z-[100]">
                     <div
-                        onClick={() => navigate('/')}
+                        onClick={() => handleNavigation("/")}
                         className="text-[#151413] text-2xl font-extrabold flex items-center gap-2 cursor-pointer">
                         <img
                             src={logo}
@@ -80,11 +91,11 @@ const HeroSection = () => {
                         <div
                             onClick={() => setSidebarOpen(true)}
                             tabIndex="0"
-                            className="cursor-pointer relative flex justify-center items-center w-14 h-14 rounded bg-black overflow-hidden group"
+                            className="cursor-pointer relative flex justify-center items-center w-14 h-14 rounded bg-[#151413] overflow-hidden group"
                         >
                             <BiMenuAltRight
                                 size={32}
-                                className="z-10 transition-transform duration-200 ease-in-out group-hover:text-black group-hover:rotate-180 group-focus:text-black group-focus:rotate-180 text-white"
+                                className="z-10 transition-transform duration-200 ease-in-out group-hover:text-[#151413] group-hover:rotate-180 group-focus:text-[#151413] group-focus:rotate-180 text-white"
                             />
                             <div className="absolute top-0 right-0 w-0 h-0 border-t-0 border-r-[0.9rem] border-b-[0.9rem] border-l-0 border-solid border-transparent border-r-white transition-all duration-200 ease-in-out group-hover:border-r-[5rem] group-hover:border-b-[5rem] group-focus:border-r-[5rem] group-focus:border-b-[5rem]"></div>
                         </div>
@@ -133,7 +144,7 @@ const HeroSection = () => {
                             </button>
 
                             <button
-                                onClick={() => navigate('/projects')}
+                                onClick={() => handleNavigation("/projects")}
                                 className="tracking-wider relative px-8 py-3 bg-[#ffe9d9] text-[#151413] text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 border border-[#151413] hover:text-[#ffffff] transition-all duration-300 group">
                                 <span className="relative z-20">
                                     View My Work 🡥
