@@ -37,9 +37,10 @@ const RecentProjects = () => {
                     {/* Project 1 */}
                     <div className="relative group">
                         <img
+                            onClick={() => handleNavigation('/project-details')}
                             src={project1}
                             alt="Project 1"
-                            className="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
+                            className="w-full cursor-pointer h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                         />
 
                         <div className="flex justify-start gap-4 mt-4">
@@ -65,9 +66,10 @@ const RecentProjects = () => {
                     {/* Project 2 */}
                     <div className="relative group">
                         <img
+                            onClick={() => handleNavigation('/project-details')}
                             src={project2}
                             alt="Project 2"
-                            className="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
+                            className="w-full cursor-pointer h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                         />
 
                         <div className="flex justify-start gap-4 mt-4">

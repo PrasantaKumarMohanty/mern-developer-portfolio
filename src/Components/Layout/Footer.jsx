@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import { MdArrowOutward } from 'react-icons/md';
+// import resume from '../../Assets/Docs/Resume.pdf';
 
 const Footer = () => {
     return (
@@ -17,7 +18,7 @@ const Footer = () => {
                         Work Together
                     </h2>
                     <p className="text-gray-400 my-6 text-sm md:text-md tracking-wide text-center lg:text-left">
-                        I'm always open to new opportunities. If you have a project or collaboration in mind, feel free to reach out!
+                        Building scalable and impactful web solutions with expertise in the MERN stack. Always open to connect and collaborate.
                     </p>
                 </div>
 
@@ -26,7 +27,7 @@ const Footer = () => {
                     style={{ fontFamily: 'Syne, sans-serif' }}
                     className="relative text-center lg:text-left border border-gray-500 p-6 rounded-lg bg-transparent flex flex-col justify-center items-center lg:items-start">
                     <h4 className="text-xl md:text-2xl font-semibold tracking-wide text-white mb-4">
-                        Looking for a hectic developer?
+                        Looking for a hectic Software Developer?
                     </h4>
                     <ul className="space-y-4 text-sm md:text-md">
                         <li className="flex items-center tracking-wide font-semibold text-gray-400">
@@ -54,7 +55,7 @@ const Footer = () => {
                     </h4>
                     <div className="flex justify-center lg:justify-start space-x-6">
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/PrasantaKumarMohanty?tab=repositories"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-white transition transform hover:scale-125 duration-300"
@@ -62,7 +63,7 @@ const Footer = () => {
                             <FaGithub className="w-8 h-8" />
                         </a>
                         <a
-                            href="https://linkedin.com/in/yourusername"
+                            href="https://www.linkedin.com/in/prasanta-kumar-mohanty-53129a1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-white transition transform hover:scale-125 duration-300"
@@ -78,13 +79,18 @@ const Footer = () => {
                             <FaTwitter className="w-8 h-8" />
                         </a>
                         <a
-                            href="mailto:youremail@example.com"
+                            href="mailto:mprasantakumar72@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-gray-400 hover:text-white transition transform hover:scale-125 duration-300"
                         >
                             <FaEnvelope className="w-8 h-8" />
                         </a>
                     </div>
-                    <MdArrowOutward className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6" color='#ffb646' size={32} />
+                    <MdArrowOutward
+                        className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6"
+                        color='#ffb646'
+                        size={32} />
                 </div>
             </div>
 
@@ -102,12 +108,23 @@ const Footer = () => {
                     Thanks For Scrolling.
                 </div>
 
-                <button className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
+                <a
+                    href="/Resume.pdf"
+                    download="Resume.pdf"
+                    className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group"
+                >
                     <span className="relative z-20">
                         My Resume 🡥
                     </span>
                     <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
-                </button>
+                </a>
+
+                {/* <button className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
+                    <span className="relative z-20">
+                        My Resume 🡥
+                    </span>
+                    <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
+                </button> */}
 
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
@@ -127,13 +144,6 @@ const Footer = () => {
                         Back To Top 🡡
                     </a>
                 </div>
-
-
-                {/* <div
-                    style={{ fontFamily: 'Syne, sans-serif' }}
-                    className="text-sm md:text-md lg:text-lg mt-4 lg:mt-0 tracking-wider font-medium text-[#ffffff]">
-                    <a href="#top" className="hover:text-[#ffb646] transition duration-300">Back To Top 🡡</a>
-                </div> */}
             </div>
 
             {/* Bottom Section - Name */}

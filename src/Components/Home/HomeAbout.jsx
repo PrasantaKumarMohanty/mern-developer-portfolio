@@ -83,10 +83,10 @@ const HomeAbout = () => {
                                 <h3
                                     style={{ fontFamily: 'Syne, sans-serif' }}
                                     className="mb-2 text-3xl md:text-4xl font-extrabold text-[#151413]">
-                                    3+
+                                    10+
                                 </h3>
                                 <p className="text-lg md:text-xl font-semibold text-gray-600 tracking-wide">
-                                    Relevant experience
+                                    Works on Overseas Projects
                                 </p>
                             </div>
 
@@ -98,19 +98,21 @@ const HomeAbout = () => {
                                     16+
                                 </h3>
                                 <p className="text-lg md:text-xl font-semibold text-gray-600 tracking-wide">
-                                    Total Projects
+                                    Total Corporate Projects
                                 </p>
                             </div>
                         </div>
 
-
-                        {/* Button */}
-                        <button className="mt-6 w-full md:w-[60%] tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-md md:text-lg font-semibold hover:ring-1 ring-[#151413] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
+                        <a
+                            href="/Resume.pdf"
+                            download="Resume.pdf"
+                            className="text-center mt-6 w-full md:w-[60%] tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-md md:text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group"
+                        >
                             <span className="relative z-20">
-                                Download My Resume 🡥
+                               Download My Resume 🡥
                             </span>
-                            <div className="absolute inset-0 bg-[#ffffff] w-0 h-full ring-1 ring-[#151413] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
-                        </button>
+                            <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
+                        </a>
                     </div>
                 </div>
             </div>
