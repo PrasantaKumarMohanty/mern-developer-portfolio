@@ -12,7 +12,7 @@ const AboutMe = () => {
                         <img
                             src={img1}
                             alt="own-img"
-                            className="w-full h-full rounded-lg object-cover"
+                            className="w-full h-full rounded-lg object-contain"
                         />
                     </div>
 

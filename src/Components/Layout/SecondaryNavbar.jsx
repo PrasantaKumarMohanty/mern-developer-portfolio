@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
-import logo from '../../Assets/Logos/mern-logo.png';
+import logo from '../../Assets/Logos/sdeLogo.png';
 import Sidebar from './Sidebar';
 import { useNavigate } from 'react-router-dom';
 import ContactModal from '../Common/ContactModal';

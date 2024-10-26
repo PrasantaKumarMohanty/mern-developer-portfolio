@@ -3,7 +3,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import heroImg from "../../Assets/Home/hero.png";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import CircularButton from "./CircularButton";
-import logo from '../../Assets/Logos/new-logo-no-bg.png';
+import logo from '../../Assets/Logos/sdeLogo.png';
 import Sidebar from "../Layout/Sidebar";
 import { useNavigate } from "react-router-dom";
 import ContactModal from "../Common/ContactModal";
@@ -39,13 +39,13 @@ const HeroSection = () => {
             />
 
             <div className="relative h-screen bg-cover bg-center bg-[#ffe9d9]">
-                <nav className="absolute px-10 py-3 border-b border-[#151413] top-0 left-0 w-full flex justify-between items-center bg-transparent z-[100]">
+                <nav className="absolute px-10 py-4 border-b border-[#151413] top-0 left-0 w-full flex justify-between items-center bg-transparent z-[100]">
                     <div
                         onClick={() => handleNavigation("/")}
                         className="text-[#151413] text-2xl font-extrabold flex items-center gap-2 cursor-pointer">
                         <img
                             src={logo}
-                            className="w-auto h-16 object-contain"
+                            className="w-auto h-12 object-contain"
                             alt="logo"
                         />
 
