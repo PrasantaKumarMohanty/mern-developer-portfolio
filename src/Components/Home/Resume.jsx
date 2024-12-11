@@ -4,6 +4,7 @@ import { GoDotFill } from "react-icons/go";
 import { FaReact, FaNodeJs, FaJsSquare, FaBootstrap } from 'react-icons/fa';
 import { SiAmazonaws, SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { TbBrandMysql, TbBrandReactNative, TbBrandRedux } from 'react-icons/tb';
+import { MdArrowOutward } from "react-icons/md";
 
 const Resume = () => {
     const resumeTabs = ['Work Experience', 'About Me', 'Education', 'Skills', 'Awards'];
@@ -594,7 +595,9 @@ const Resume = () => {
                                     }`}
                             >
                                 <span className="text-md tracking-wider font-semibold">{tab}</span>
-                                <span className="text-xl tracking-wider font-extrabold">🡥</span>
+                                <span className="text-xl">
+                                    <MdArrowOutward size={22} />
+                                </span>
                             </div>
                         ))}
                     </div>

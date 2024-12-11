@@ -8,6 +8,7 @@ import Sidebar from "../Layout/Sidebar";
 import { useNavigate } from "react-router-dom";
 import ContactModal from "../Common/ContactModal";
 import FloatingButton from "../Common/FloatingButton";
+import { MdArrowOutward } from "react-icons/md";
 
 const HeroSection = () => {
     const navigate = useNavigate();
@@ -137,8 +138,13 @@ const HeroSection = () => {
                             <button
                                 onClick={handleOpenModal}
                                 className="tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-lg font-semibold hover:ring-1 ring-[#151413] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
-                                <span className="relative z-20">
-                                    Let's Connect 🡥
+                                <span className="relative z-20 flex justify-center items-center gap-2">
+                                    <span>
+                                        Let's Connect
+                                    </span>
+                                    <span>
+                                        <MdArrowOutward size={22} />
+                                    </span>
                                 </span>
                                 <div className="absolute inset-0 bg-[#ffe9d9] w-0 h-full ring-1 ring-[#151413] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                             </button>
@@ -146,8 +152,13 @@ const HeroSection = () => {
                             <button
                                 onClick={() => handleNavigation("/projects")}
                                 className="tracking-wider relative px-8 py-3 bg-[#ffe9d9] text-[#151413] text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 border border-[#151413] hover:text-[#ffffff] transition-all duration-300 group">
-                                <span className="relative z-20">
-                                    View My Work 🡥
+                                <span className="relative z-20 flex justify-center items-center gap-2">
+                                    <span>
+                                        View My Works
+                                    </span>
+                                    <span>
+                                        <MdArrowOutward size={22} />
+                                    </span>
                                 </span>
                                 <div className="absolute inset-0 bg-[#151413] w-0 h-full transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                             </button>

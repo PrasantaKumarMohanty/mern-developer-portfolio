@@ -1,7 +1,8 @@
 import React from 'react';
-import project1 from '../../Assets/Projects/project1.png';
-import project2 from '../../Assets/Projects/project2.png';
+import iber from '../../Assets/Projects/iber.png';
+import hc from '../../Assets/Projects/hc.png';
 import { useNavigate } from 'react-router-dom';
+import { MdArrowOutward } from 'react-icons/md';
 
 const RecentProjects = () => {
     const navigate = useNavigate();
@@ -37,10 +38,10 @@ const RecentProjects = () => {
                     {/* Project 1 */}
                     <div className="relative group">
                         <img
-                            onClick={() => handleNavigation('/project-details')}
-                            src={project1}
+                            onClick={() => handleNavigation('/project-details/p1')}
+                            src={iber}
                             alt="Project 1"
-                            className="w-full cursor-pointer h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
+                            className="w-full cursor-pointer h-[300px] object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                         />
 
                         <div className="flex justify-start gap-4 mt-4">
@@ -59,17 +60,17 @@ const RecentProjects = () => {
                         <h3
                             style={{ fontFamily: 'Syne, sans-serif' }}
                             className="mt-4 text-lg md:text-xl font-semibold text-[#151413]">
-                            Project Name 1
+                            Saloon & Spa POS and CRM System
                         </h3>
                     </div>
 
                     {/* Project 2 */}
                     <div className="relative group">
                         <img
-                            onClick={() => handleNavigation('/project-details')}
-                            src={project2}
+                            onClick={() => handleNavigation('/project-details/p2')}
+                            src={hc}
                             alt="Project 2"
-                            className="w-full cursor-pointer h-auto object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
+                            className="w-full cursor-pointer h-[300px] object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                         />
 
                         <div className="flex justify-start gap-4 mt-4">
@@ -88,18 +89,25 @@ const RecentProjects = () => {
                         <h3
                             style={{ fontFamily: 'Syne, sans-serif' }}
                             className="mt-4 text-lg md:text-xl font-semibold text-[#151413]">
-                            Project Name 2
+                            Dating Android App & Admin Dashboard
                         </h3>
                     </div>
                 </div>
 
                 {/* View All Projects Button */}
-                <div className="text-center mt-12">
+                <div className="flex justify-center items-center mt-12">
                     <button
                         onClick={() => handleNavigation('/projects')}
-                        className="px-6 py-3 bg-[#151413] hover:bg-[#ffb646] text-white text-lg font-semibold rounded-md shadow-lg transition-transform transform hover:scale-105"
-                        style={{ fontFamily: 'Syne, sans-serif' }}>
-                        View All Projects 🡥
+                        className="gap-2 px-6 py-3 bg-[#151413] hover:bg-[#ffb646] text-white text-lg font-semibold rounded-md shadow-lg transition-transform transform hover:scale-105 flex items-center"
+                        style={{ fontFamily: 'Syne, sans-serif' }}
+                    >
+                        <span>
+                            View All Projects
+                        </span>
+
+                        <span>
+                            <MdArrowOutward size={22} />
+                        </span>
                     </button>
                 </div>
             </div>

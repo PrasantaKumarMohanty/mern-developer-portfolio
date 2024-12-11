@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../../Assets/Home/about1.png';
 import './HomeAbout.css';
+import { MdArrowOutward } from "react-icons/md";
 
 const HomeAbout = () => {
     return (
@@ -104,13 +105,18 @@ const HomeAbout = () => {
                         </div>
 
                         <a
-                            href="/Resume.pdf"
-                            download="Resume.pdf"
+                            href="/Prasanta_K_Mohanty_MERN_Stack_Resume.pdf"
+                            download="Prasanta_K_Mohanty_MERN_Stack_Resume.pdf"
                             className="text-center mt-6 w-full md:w-[60%] tracking-wider relative px-8 py-3 bg-[#151413] text-white hover:text-[#151413] text-md md:text-lg font-semibold rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group"
                         >
-                            <span className="relative z-20">
-                               Download My Resume 🡥
-                            </span>
+                            <span className="relative z-20 flex justify-center items-center gap-2">
+                                    <span>
+                                        Download My Resume
+                                    </span>
+                                    <span>
+                                        <MdArrowOutward size={22} />
+                                    </span>
+                                </span>
                             <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                         </a>
                     </div>

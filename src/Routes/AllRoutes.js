@@ -11,7 +11,7 @@ const userRoutes = [
   { path: "/about", component: <About /> },
   { path: "/contact", component: <Contact /> },
   { path: "/projects", component: <Projects /> },
-  { path: "/project-details", component: <ProjectDetails /> },
+  { path: "/project-details/:projectId", component: <ProjectDetails /> },
   { path: "*", component: <NotFound /> },
 ];
 

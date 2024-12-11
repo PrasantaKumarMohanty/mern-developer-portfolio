@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
-import { MdArrowOutward } from 'react-icons/md';
-// import resume from '../../Assets/Docs/Resume.pdf';
+import { MdArrowOutward, MdOutlineArrowUpward } from 'react-icons/md';
 
 const Footer = () => {
     return (
@@ -109,22 +108,20 @@ const Footer = () => {
                 </div>
 
                 <a
-                    href="/Resume.pdf"
-                    download="Resume.pdf"
+                    href="/Prasanta_K_Mohanty_MERN_Stack_Resume.pdf"
+                    download="Prasanta_K_Mohanty_MERN_Stack_Resume.pdf"
                     className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group"
                 >
-                    <span className="relative z-20">
-                        My Resume 🡥
+                    <span className="relative z-20 flex justify-center items-center gap-2">
+                        <span>
+                            My Resume
+                        </span>
+                        <span>
+                            <MdArrowOutward size={22} />
+                        </span>
                     </span>
                     <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
                 </a>
-
-                {/* <button className="tracking-wider relative px-6 py-2 md:px-8 md:py-3 bg-[#ffffff] text-[#151413] hover:text-[#ffffff] text-lg font-semibold hover:ring-1 ring-[#ffffff] rounded-lg shadow-md overflow-hidden z-10 transition-all duration-300 group">
-                    <span className="relative z-20">
-                        My Resume 🡥
-                    </span>
-                    <div className="absolute inset-0 bg-[#ffb646] w-0 h-full ring-1 ring-[#ffffff] transition-all duration-300 group-hover:w-full group-hover:z-10"></div>
-                </button> */}
 
                 <div
                     style={{ fontFamily: 'Syne, sans-serif' }}
@@ -139,9 +136,14 @@ const Footer = () => {
                                 behavior: "smooth"
                             });
                         }}
-                        className="hover:text-[#ffb646] transition duration-300"
+                        className="hover:text-[#ffb646] transition duration-300 flex justify-center items-center gap-2"
                     >
-                        Back To Top 🡡
+                        <span>
+                            Back To Top
+                        </span>
+                        <span>
+                            <MdOutlineArrowUpward size={22} />
+                        </span>
                     </a>
                 </div>
             </div>
